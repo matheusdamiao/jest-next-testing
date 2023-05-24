@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders homepage unchanged 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <button>
+      agende sua consultu
+    </button>
+    <footer>
+      olá
+    </footer>
+    <button>
+      Agende sua consulta
+    </button>
+  </div>
+</div>
+`;
