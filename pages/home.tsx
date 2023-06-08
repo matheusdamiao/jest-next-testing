@@ -1,19 +1,18 @@
 import Head from "next/head";
-import Image from "next/image";
-
-import styles from "@/pages/index.module.css";
-import CTA from "@/components/CTA";
+import CTA from "@/components/CTA/CTA";
+import Hero from "@/components/HeroSection/Hero";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
+    <div>
+      {/* <Head>
         <title>Testing with Jest and Testing-Library </title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <button>agende sua consultu</button>
+      <button>agende sua consulta</button>
       <footer>olá</footer>
-      <CTA />
+      <CTA /> */}
+      <Hero />
     </div>
   );
 }
