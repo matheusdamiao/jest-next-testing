@@ -14,8 +14,8 @@
     padding-right: 5dvw;
     padding-top: 2dvh;
     padding-bottom: 2dvh;
-    position: sticky;
-    top: 0;
+    position: fixed;
+   width: 100%;
 }
 
 .logoDesktop {
@@ -75,6 +75,7 @@
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    padding-top: 10dvh;
 }
 
 .text { 
