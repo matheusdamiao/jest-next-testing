@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+
+
+
+.wrapper {
+    background-color: #D9D9D9;
+    height: 100%;
+    padding-top: 20dvh;
+    padding-left: 5dvw;
+    padding-right: 5dvw;
+}
+
+.heading h1 {
+    margin: 0;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 48px;
+
+color: #03191E;
+}
+
+.heading span {
+    display: block;
+    width: 8%;
+    height: 2px;
+    background-color: #9F353A;
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+
+
+.heading h3 {
+    /* text-align: left; */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 36px;
+    color: #252422;
+    max-width: 800px;
+    }
+
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    padding-top: 5dvh;
+    padding-bottom: 15dvh;
+}
+
+
+.card {
+    max-width: 363px;
+    height: 409px;
+    background: #D9D9D9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 4px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 26px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 4dvh;
+    padding-right: 4dvh;
+    padding-top: 2dvh;
+    padding-bottom: 2dvh;
+    
+}
+
+.card h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+    color: #03191E;
+    padding-top: 2dvh;
+}
+
+.card p {
+    /* padding-top: 10%; */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #383633;
+}
+
+.cards .card:first-child > p {
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    
+
+    .wrapper {
+        padding-top: 10dvh;
+    }
+
+    .heading h1 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .heading h3 {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .card {
+        height: 100%;
+        min-height: 250px;
+    }
+
+
+    .card h3 {
+        font-size: 20px;
+        line-height: 24px;
+       
+    }
+
+    .card p {
+        font-size: 14px;
+        line-height: 17px;
+        margin-top: 0;
+    }
+}
