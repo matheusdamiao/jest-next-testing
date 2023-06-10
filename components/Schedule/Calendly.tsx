@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Script from "next/script";
 
 const Calendly = () => {
-  function isCalendlyEvent(e) {
+  function isCalendlyEvent(e: any) {
     return (
       e.origin === "https://calendly.com" &&
       e.data.event &&
