@@ -2,6 +2,7 @@ import Head from "next/head";
 import CTA from "@/components/CTA/CTA";
 import Hero from "@/components/HeroSection/Hero";
 import Services from "@/components/ServicesSection/Services";
+import About from "@/components/AboutSection/About";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <CTA /> */}
       <Hero />
       <Services />
+      <About />
     </div>
   );
 }
