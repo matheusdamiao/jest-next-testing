@@ -5,6 +5,8 @@ import Services from "@/components/ServicesSection/Services";
 import About from "@/components/AboutSection/About";
 import Quotation from "@/components/QuotationSection/Quotation";
 import Reasons from "@/components/ReasonsSection/Reasons";
+import CallForSchedule from "@/components/CallForScheduleSection/CallForSchedule";
+import FAQ from "@/components/FAQSection/FAQ";
 
 export default function Home() {
   return (
@@ -21,6 +23,8 @@ export default function Home() {
       <About />
       <Quotation />
       <Reasons />
+      <CallForSchedule />
+      <FAQ />
     </div>
   );
 }
