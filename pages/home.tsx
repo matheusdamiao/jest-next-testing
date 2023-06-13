@@ -3,6 +3,7 @@ import CTA from "@/components/CTA/CTA";
 import Hero from "@/components/HeroSection/Hero";
 import Services from "@/components/ServicesSection/Services";
 import About from "@/components/AboutSection/About";
+import Quotation from "@/components/QuotationSection/Quotation";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Hero />
       <Services />
       <About />
+      <Quotation />
     </div>
   );
 }
