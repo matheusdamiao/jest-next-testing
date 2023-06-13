@@ -4,6 +4,7 @@ import Hero from "@/components/HeroSection/Hero";
 import Services from "@/components/ServicesSection/Services";
 import About from "@/components/AboutSection/About";
 import Quotation from "@/components/QuotationSection/Quotation";
+import Reasons from "@/components/ReasonsSection/Reasons";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Services />
       <About />
       <Quotation />
+      <Reasons />
     </div>
   );
 }

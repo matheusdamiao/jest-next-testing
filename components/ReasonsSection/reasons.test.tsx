@@ -1,10 +1,18 @@
 import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
 import Reasons from "./Reasons";
 
 describe("<Reasons/>", () => {
   it("should show reasons section", async () => {
-    // render(<Reasons />);
-    throw Error("Not implemented");
+    render(<Reasons />);
+    expect(screen.getByTestId("reasons")).toBeInTheDocument();
+  });
+
+  it("should show the title 'por que fazer psicoterapia?", () => {
+    render(<Reasons />);
+    expect(
+      screen.getByRole("heading", {
+        name: /por que fazer psicoterapia\?/i,
+      })
+    );
   });
 });
