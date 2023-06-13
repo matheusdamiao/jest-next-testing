@@ -5,7 +5,7 @@
     /* height: 100%; */
     max-height: 110vh;
     padding-top: 20dvh;
-    padding-left: 5dvw;
+    padding-left: 10dvw;
     padding-right: 5dvw;
     padding-bottom: 10dvh;
     background-color: #B2BAB8;
@@ -52,7 +52,7 @@
 
 
     .wrapper > img {
-        max-width: 500px;
+        max-width: 400px;
         display: block;
         width: 100%;
     }

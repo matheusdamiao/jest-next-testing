@@ -4,7 +4,7 @@ import foto from "./foto-about.png";
 
 const About = () => {
   return (
-    <div className={style.wrapper}>
+    <div data-testid="about" className={style.wrapper}>
       <div className={style.heading}>
         <h1 data-testid="title">Quem sou</h1>
         <span></span>
