@@ -7,17 +7,15 @@ import Quotation from "@/components/QuotationSection/Quotation";
 import Reasons from "@/components/ReasonsSection/Reasons";
 import CallForSchedule from "@/components/CallForScheduleSection/CallForSchedule";
 import FAQ from "@/components/FAQSection/FAQ";
+import Contact from "@/components/ContactSection/Contact";
 
 export default function Home() {
   return (
     <div>
-      {/* <Head>
-        <title>Testing with Jest and Testing-Library </title>
+      <Head>
+        <title> Psicóloga Raquel Silveira</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <button>agende sua consulta</button>
-      <footer>olá</footer>
-      <CTA /> */}
       <Hero />
       <Services />
       <About />
@@ -25,6 +23,7 @@ export default function Home() {
       <Reasons />
       <CallForSchedule />
       <FAQ />
+      <Contact />
     </div>
   );
 }
