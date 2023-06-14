@@ -16,6 +16,10 @@
     padding-bottom: 2dvh;
     position: fixed;
    width: 100%;
+   background: rgba(178, 186, 184, 0.6);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
 
 .logoDesktop {
@@ -30,6 +34,8 @@
 .menuHamburger {
     display: none;
 }
+
+
 
 .menuHamburger .line {
     display: block;
@@ -75,7 +81,7 @@
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding-top: 10dvh;
+    padding-top: 15dvh;
 }
 
 .text { 
@@ -122,22 +128,29 @@
        }
 
        .logoMobile {
-        display: block;
+        display: flex;
+        align-items: center;
        }
 
        .menuHamburger {
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: center;
         gap: 3px;
         cursor: pointer;
     }
 
+        .heading {
+            padding-top: 10dvh;
+        }
 
     .text {
         padding-top: 5dvh;
         padding-left: 40px;
-        padding-right: 50px;
+        padding-right: 10dvh;
+        display: flex;
+        flex-direction: column;
     }
 
     .text h1 {
@@ -167,5 +180,7 @@
     .image img {
         width: 100%;
     }
+
+
      
 }

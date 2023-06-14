@@ -3,6 +3,7 @@ import style from "./hero.module.css";
 import logoDesktop from "./logo-desktop.png";
 import logoMobile from "./logo-mobile.png";
 import fotoBg from "./foto-bg-hero.png";
+import CTA from "../CTA/CTA";
 
 const Hero = () => {
   return (
@@ -28,13 +29,13 @@ const Hero = () => {
             <a href="">Dúvidas</a>
           </li>{" "}
           <li>
-            <a href="">Agendar Consulta</a>
+            <a href="/agenda">Agendar Consulta</a>
           </li>
         </ul>
         <div className={style.menuHamburger}>
+          {/* <span className={style.line}></span>
           <span className={style.line}></span>
-          <span className={style.line}></span>
-          <span className={style.line}></span>
+          <span className={style.line}></span> */}
         </div>
       </nav>
 
@@ -46,7 +47,8 @@ const Hero = () => {
             oferecer o apoio e a orientação que você precisa pra viver com
             bem-estar.
           </p>
-          <button> agendar minha consulta </button>
+          {/* <button> agendar minha consulta </button> */}
+          <CTA />
         </div>
         <div className={style.image}>
           <img
