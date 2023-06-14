@@ -147,10 +147,11 @@
 
     .text {
         padding-top: 5dvh;
-        padding-left: 40px;
-        padding-right: 10dvh;
+        padding-left: 5dvw;
+        padding-right: 5dvw;
         display: flex;
         flex-direction: column;
+        
     }
 
     .text h1 {
