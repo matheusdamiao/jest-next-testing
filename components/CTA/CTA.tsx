@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
+import style from "./cta.module.css";
+import Link from "next/link";
 
 const CTA = () => {
-  const [modal, setModal] = useState(false);
-
   return (
-    <>
-      {modal && <div data-testid="modal">Agendamento</div>}
-      <button onClick={() => setModal(!modal)}>Agende sua consulta</button>
-    </>
+    <a href="/agenda" className={style.button} data-testid="CTA">
+      {" "}
+      agendar minha consulta
+    </a>
   );
 };
 

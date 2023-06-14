@@ -1,0 +1,23 @@
+
+
+.button {
+        background: #03191E;
+        border-radius: 26px;
+        padding: 20px 46.5px;
+        font-size: 30px;
+        color: #D9D9D9;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+
+
+    @media screen and (max-width: 800px) {
+        .button {
+            font-size: 16px;
+            padding: 15px 25px; 
+            font-family: 'Inter', sans-serif;
+        }
+
+    }
