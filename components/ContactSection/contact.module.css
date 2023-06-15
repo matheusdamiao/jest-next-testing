@@ -12,6 +12,7 @@
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    gap: 50px;
 }
 
 
@@ -61,7 +62,7 @@
             text-align: center;
             align-items: center;
             background-position: 20% 0%;
-            height: 100%;
+            /* height: 100%; */
         }
 
         .heading {
@@ -70,9 +71,20 @@
             align-items: center;
         }
 
+        .heading h1 {
+            font-size: 30px;
+            line-height: 36px;
+        }
+
         .heading span {
             width: 30%;
 
+        }
+
+        .heading h3 {
+            font-size: 18px;
+            line-height: 30px;
+            margin-bottom: 10dvh;
         }
     
         .button {

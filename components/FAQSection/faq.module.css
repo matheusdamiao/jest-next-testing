@@ -145,7 +145,11 @@
         font-size: 30px;
         line-height: 36px;
     }
-
+    
+    .block h1 {
+        font-size: 18px;
+        line-height: 24px;
+    }
 
 }
 

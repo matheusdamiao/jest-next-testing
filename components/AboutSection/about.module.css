@@ -41,18 +41,16 @@
 
 
 .wrapper p {
-  
-
     font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 24px;
+    line-height: 36px;
     max-width: 500px;
     color: #252422;
     }
 
 
     .wrapper > img {
-        max-width: 400px;
+        max-width: 500px;
         display: block;
         width: 100%;
     }
@@ -65,10 +63,14 @@
             flex-wrap: wrap;
             align-items: flex-start;
             padding-top: 10dvh;
+            padding-left: 5dvw;
         }
 
         .wrapper p {
             max-width: 100%;
+            font-size: 18px;
+            line-height: 30px;
+            margin-bottom: 50px;
         }
 
         .heading h1 {

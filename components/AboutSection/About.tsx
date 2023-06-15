@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div data-testid="about" className={style.wrapper}>
       <div className={style.heading}>
-        <h1 data-testid="title">Quem sou</h1>
+        <h1 data-testid="title"> Quem é a Raquel Silveira? </h1>
         <span></span>
       </div>
       <p>
