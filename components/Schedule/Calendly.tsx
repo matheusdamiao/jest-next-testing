@@ -28,7 +28,8 @@ const Calendly = () => {
     <>
       <div
         className="calendly-inline-widget calendario"
-        data-url="https://calendly.com/matheusdamiao/pre-briefing?hide_event_type_details=1&hide_gdpr_banner=1"
+        data-testid="calendar"
+        data-url="https://calendly.com/raquelsilveira/primeira-sessao?&hide_gdpr_banner=1"
       ></div>
       <Script
         type="text/javascript"

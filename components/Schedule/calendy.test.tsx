@@ -4,7 +4,7 @@ import Calendly from "./Calendly";
 
 describe("<Calendly/>", () => {
   it("should show calendly component", async () => {
-    // render(<Calendly/>);
-    throw Error("Not implemented");
+    render(<Calendly />);
+    await expect(screen.getByTestId("calendar")).toBeInTheDocument();
   });
 });
