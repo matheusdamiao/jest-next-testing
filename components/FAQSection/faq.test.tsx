@@ -8,7 +8,7 @@ describe("<FAQ/>", () => {
     expect(screen.getByTestId("faq")).toBeInTheDocument();
   });
 
-  it("should show open the answer to a question", async () => {
+  it("should show the answer to a question", async () => {
     render(<FAQ />);
     const question = screen.getAllByTestId("question");
     await userEvent.click(question[1]);
