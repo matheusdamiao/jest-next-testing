@@ -15,11 +15,12 @@
     padding-top: 2dvh;
     padding-bottom: 2dvh;
     position: fixed;
+    z-index: 9999;
    width: 100%;
-   background: rgba(178, 186, 184, 0.6);
+   background: rgba(178, 186, 184, 0.8);
     /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    /* backdrop-filter: blur(20px); */
+    /* -webkit-backdrop-filter: blur(20px); */
 }
 
 .logoDesktop {

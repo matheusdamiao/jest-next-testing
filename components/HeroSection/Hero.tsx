@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./hero.module.css";
 import logoDesktop from "./logo-desktop.png";
-import logoMobile from "./logo-mobile.png";
+import logoMobile from "./logo-mobile.svg";
 import fotoBg from "./foto-bg-hero.png";
 import CTA from "../CTA/CTA";
 
