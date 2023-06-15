@@ -1,0 +1,84 @@
+
+
+.confirmed {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100dvh;
+    width: 100%;
+    z-index: 9999;
+    position: absolute;
+    top: 0;
+    background-color: #B2BAB8;
+    font-family: 'Inter', sans-serif;
+    padding: 0px 2dvw;
+}
+
+.confirmed img {
+    max-width: 100px;
+}
+
+.confirmed h1 {
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    color: #03191E;
+}
+
+.confirmed h3 {
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #252422;
+    margin-top: 0;
+    max-width: 800px;
+}
+
+.confirmed small {
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Inter';
+    max-width: 300px;
+}
+
+
+.button {
+    background: #03191E;
+    border-radius: 26px;
+    padding: 20px 46.5px;
+    font-size: 30px;
+    color: #D9D9D9;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    margin-top: 10dvh;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .confirmed h1 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .confirmed h3 {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .button {
+        font-size: 16px;
+        padding: 15px 25px; 
+        font-family: 'Inter', sans-serif;
+    }
+
+}
