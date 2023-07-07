@@ -39,7 +39,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className={style.wrapper} data-testid="faq">
+    <div className={style.wrapper} data-testid="faq" id="duvidas">
       <div className={style.heading}>
         <h1 data-testid="title">Perguntas frequentes</h1>
         <span></span>

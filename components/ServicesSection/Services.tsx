@@ -3,7 +3,7 @@ import style from "./services.module.css";
 
 const Services = () => {
   return (
-    <div data-testid="services" className={style.wrapper}>
+    <div data-testid="services" id="services" className={style.wrapper}>
       <div className={style.heading}>
         <h1 data-testid="title">Serviços Oferecidos</h1>
         <span></span>

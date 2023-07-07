@@ -18,9 +18,6 @@
     z-index: 9999;
    width: 100%;
    background: rgba(178, 186, 184, 0.8);
-    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
-    /* backdrop-filter: blur(20px); */
-    /* -webkit-backdrop-filter: blur(20px); */
 }
 
 .logoDesktop {
@@ -34,16 +31,95 @@
 
 .menuHamburger {
     display: none;
+    cursor: pointer;
+}
+
+.menuHamburger .lineOpen  {
+    color: black;
+    width: 18px;
+    height: 2px;
+    transition: 0.3s;
+}
+
+.menuHamburger .lineOpen:first-child  {
+    transform: rotate(45deg) translateX(4px) translateY(3px);
 }
 
 
+.menuHamburger .lineOpen:nth-child(2)  {
+    color: black;
+    opacity: 0;
+}
 
-.menuHamburger .line {
+.menuHamburger .lineOpen:nth-child(3)  {
+    transform: rotate(-45deg) translateX(4px) translateY(-3px);
+}
+
+
+.menuHamburger .lineClosed {
     display: block;
-    width: 24px;
-    height: 3px;
+    width: 18px;
+    height: 2px;
+    background-color: black;
+    transition: 0.3s;
+}
+
+.menuHamburger :first-child {
     background-color: black;
 }
+
+.menuHamburger :nth-child(2){
+    background-color: black;
+}
+
+.menuHamburger :nth-child(3){
+    background-color: black;
+}
+
+.menuMobileClosed {
+    transition: 1s;
+    position: fixed;
+    top: 0;
+}
+
+.menuMobile {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    height: 50svh;
+    background-color: rgba(178, 186, 184, 0.8);
+    width: 100%;
+    padding-top: 5dvh;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.menuMobile ul {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4svh;
+}
+.menuMobile ul li a {
+    text-decoration: none;
+    color: #03191E;
+    font-weight: 500;
+    transition: 2s;
+
+}
+
+.menuMobile ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+@keyframes underline {
+    
+}
+
 
 .links{
     display: flex;

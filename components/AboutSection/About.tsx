@@ -4,7 +4,7 @@ import foto from "./foto-about.png";
 
 const About = () => {
   return (
-    <div data-testid="about" className={style.wrapper}>
+    <div data-testid="about" id="about" className={style.wrapper}>
       <div className={style.heading}>
         <h1 data-testid="title"> Quem é a Raquel Silveira? </h1>
         <span></span>

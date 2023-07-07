@@ -3,7 +3,7 @@ import style from "./reasons.module.css";
 
 const Reasons = () => {
   return (
-    <div data-testid="reasons" className={style.wrapper}>
+    <div data-testid="reasons" id="psicoterapia" className={style.wrapper}>
       <div className={style.heading}>
         <h1 data-testid="title">Por que fazer psicoterapia?</h1>
         <span></span>

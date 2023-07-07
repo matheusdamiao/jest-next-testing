@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "./hero.module.css";
 import logoDesktop from "./logo-desktop.png";
 import logoMobile from "./logo-mobile.svg";
@@ -6,8 +6,14 @@ import fotoBg from "./foto-bg-hero.png";
 import CTA from "../CTA/CTA";
 
 const Hero = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <div data-testid="heroSection" className={style.wrapper}>
+    <div data-testid="heroSection" id="faq" className={style.wrapper}>
       <nav data-testid="nav" className={style.nav}>
         <div className={style.logoDesktop}>
           <img src={logoDesktop.src} alt="" />
@@ -17,27 +23,57 @@ const Hero = () => {
         </div>
         <ul className={style.links}>
           <li>
-            <a href="">Serviços</a>
+            <a href="#services">Serviços</a>
           </li>
           <li>
-            <a href="">Sobre mim</a>
+            <a href="#about">Sobre mim</a>
           </li>{" "}
           <li>
-            <a href="">Psicoterapia</a>
+            <a href="#psicoterapia">Psicoterapia</a>
           </li>{" "}
           <li>
-            <a href="">Dúvidas</a>
+            <a href="#duvidas">Dúvidas</a>
           </li>{" "}
           <li>
             <a href="/agenda">Agendar Consulta</a>
           </li>
         </ul>
-        <div className={style.menuHamburger}>
-          {/* <span className={style.line}></span>
-          <span className={style.line}></span>
-          <span className={style.line}></span> */}
+        <div className={style.menuHamburger} onClick={(e) => toggleMenu(e)}>
+          <span
+            className={`${isOpen ? style.lineOpen : style.lineClosed}`}
+          ></span>
+          <span
+            className={`${isOpen ? style.lineOpen : style.lineClosed}`}
+          ></span>
+          <span
+            className={`${isOpen ? style.lineOpen : style.lineClosed}`}
+          ></span>
         </div>
       </nav>
+      {isOpen ? (
+        <div className={style.menuMobile}>
+          {" "}
+          <ul>
+            <li>
+              <a href="#services">Serviços</a>
+            </li>
+            <li>
+              <a href="#about">Sobre mim</a>
+            </li>{" "}
+            <li>
+              <a href="#psicoterapia">Psicoterapia</a>
+            </li>{" "}
+            <li>
+              <a href="#faq">Dúvidas</a>
+            </li>{" "}
+            <li>
+              <a href="/agenda">Agendar Consulta</a>
+            </li>
+          </ul>
+        </div>
+      ) : (
+        <div className={style.menuMobileClosed}></div>
+      )}
 
       <div className={style.heading}>
         <div className={style.text}>
@@ -47,7 +83,6 @@ const Hero = () => {
             oferecer o apoio e a orientação que você precisa pra viver com
             bem-estar.
           </p>
-          {/* <button> agendar minha consulta </button> */}
           <CTA />
         </div>
         <div className={style.image}>
