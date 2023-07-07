@@ -38,7 +38,7 @@ const Hero = () => {
             <a href="/agenda">Agendar Consulta</a>
           </li>
         </ul>
-        <div className={style.menuHamburger} onClick={(e) => toggleMenu(e)}>
+        <div className={style.menuHamburger} onClick={() => toggleMenu()}>
           <span
             className={`${isOpen ? style.lineOpen : style.lineClosed}`}
           ></span>
